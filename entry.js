@@ -17,7 +17,7 @@ const myObservable = new Observable('Falk');
 
 const subscription = myObservable.subscribeReplay((name) => console.log(hello(name)))
 
-myObservable.next('Noah').next('1').next('2')
+myObservable.next('Noah').next('2').next('3')
 
 setTimeout(() => {
     subscription.unsubscribe();
@@ -36,7 +36,7 @@ p.onclick = () => window.alert('clicked p');
 
 p.style = "color: rgba(0,0,0,0)";
 
-document.body.style = "background: red";
+document.body.style = "background: gray";
 
 
 class Name {
@@ -51,6 +51,9 @@ class Name {
 
 }
 
-console.log(new Name("Falk"), new Name('Noah'))
+console.log(new Name("Falk"), new Name('Noah'));
+console.log(new Name('Elia'));
+
+myObservable.next('Elia');
 
 //window.p = p;
