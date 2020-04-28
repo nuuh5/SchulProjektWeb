@@ -1,9 +1,9 @@
 # [Webseite Kadetten Zürich](https://kadettenzuerich.ch/)
 
 #### Zeit
-- Bis anfang Mai, vielleicht länger
-    - Es muss nicht fertig sein
 
+- Bis anfang Mai, vielleicht länger
+  - Es muss nicht fertig sein
 
 # Requirements
 
@@ -20,10 +20,10 @@ Optional
 
 - QP
 
-
 ### TODO:
 
 - VSCode Extentions
+
   - Markdown Preview Enhanced
   - One Dark Pro
   - Live Share
@@ -31,3 +31,8 @@ Optional
   - Prettier
 
 - https://www.markdownguide.org/basic-syntax/
+
+## Packages
+
+- [NPM](https://www.npmjs.com/)
+- [CDN unpkg](https://unpkg.com)
