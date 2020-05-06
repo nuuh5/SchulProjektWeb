@@ -7,7 +7,7 @@ export const header = ({ self, store, ID, module }) =>
     text-align: center;
 `.nest(
     module.header.title({ title: "Kadetten Zürich" }),
-    ...routes.map((name, index) =>
+    ...Object.keys(routes).map((name, index) =>
       module.header.navitem({ name, ...ID(index), index })
     )
   );
@@ -18,6 +18,8 @@ export const title = ({ module }) =>
   display: block;
   width: 100%;
   text-align: center;
+  font-size: 50px;
+  padding: 5px;
 `.on({
       click: () => {
         store.route.next(-1);

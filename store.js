@@ -8,21 +8,21 @@ const toHash = (str) =>
     .filter((str) => str)
     .join("_");
 
-export const routes = [
-  "Bilder",
-  "Über Uns",
-  "Kontakt",
-  "Programm",
-  "An- / Abmeldung",
-];
+export const routes = {
+  Bilder: "",
+  "Über Uns": "ueber",
+  Kontakt: "kontakt",
+  Programm: "programm",
+  "An- / Abmeldung": "",
+};
 
 const convertHashToId = (hash) =>
-  routes.map(toHash).indexOf(hash.replace("#", ""));
+  Object.keys(routes).map(toHash).indexOf(hash.replace("#", ""));
 
 export const store = {
   route: new Observable(convertHashToId(window.location.hash)),
 };
 
 store.route.subscribe((index) => {
-  window.location.hash = toHash(routes[index]);
+  window.location.hash = toHash(Object.keys(routes)[index]);
 });
