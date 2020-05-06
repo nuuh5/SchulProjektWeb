@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kadetten Zürich</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kadetten Zürich</title>
-</head>
+  <body>
+    <script type="module">
+      import { comper } from "https://unpkg.com/comper@0.0.7";
+      import { store } from "./store.js";
 
-<body>
-  <script type="module">
-    import { comper, Observable } from "https://unpkg.com/comper@0.0.7";
+      const base = ({ module }) => document.body.append(module.entry.main());
 
-    const store = { counter: new Observable(0) };
-
-    const base = ({ module }) => document.body.append(module.entry.main());
-
-    comper({ store, base });
-  </script>
-
-  <entry-main style="white-space: pre;">Hoi Falk &nbsp;dakfds </entry-main>
-</body>
-
+      comper({ store, base });
+    </script>
+  </body>
 </html>

@@ -1,4 +1,4 @@
 export const main = ({ module }) =>
-    module.text.normal.extend(
-        ({ subs: { counter }, self, module }) => self.nest("Store counter:", counter, module.header.header())
-    )
+  module.text.normal.extend(
+    ({ self, module }) => self.nest(module.header.header()).css`display: block;`
+  );
