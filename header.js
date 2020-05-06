@@ -31,6 +31,7 @@ export const navitem = ({ module }) =>
   module.text.normal.extend(({ subs: { route }, self, context, store }) =>
     self.nest(context.name).css`
     padding: 10px;
+    font-size: 23px;
     border-bottom: ${context.index === route ? "1px solid black" : "none"};
     `.on({
       click: () => {

@@ -1,4 +1,4 @@
-import { Observable } from "https://unpkg.com/comper@0.0.7";
+import { Observable } from "https://unpkg.com/comper@0.0.8";
 
 const toHash = (str) =>
   (str || "")

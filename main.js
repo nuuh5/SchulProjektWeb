@@ -14,6 +14,7 @@ export const body = ({ subs: { route }, self }) => {
     width: 800px;
     overflow-x: hidden;
     margin: 20px auto;
+    padding: 10px;
     `;
 
   fetch(`${getBaseURL()}${Object.values(routes)[route] || "index"}.md`)
