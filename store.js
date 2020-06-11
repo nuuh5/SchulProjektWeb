@@ -9,11 +9,11 @@ const toHash = (str) =>
     .join("_");
 
 export const routes = {
-  Bilder: "",
-  "Über Uns": "ueber",
-  Kontakt: "kontakt",
-  Programm: "programm",
-  "An- / Abmeldung": "",
+  Bilder: { name: "", icon: "./icons/image.svg" },
+  "Über Uns": { name: "ueber", icon: "./icons/help-circle.svg" },
+  Kontakt: { name: "kontakt", icon: "./icons/message-square.svg" },
+  Programm: { name: "programm", icon: "./icons/calendar.svg" },
+  "An- / Abmeldung": { name: "an-abmeldung", icon: "./icons/user-check.svg" },
 };
 
 const convertHashToId = (hash) =>

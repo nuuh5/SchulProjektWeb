@@ -14,10 +14,18 @@ export const body = ({ subs: { route }, self }) => {
     width: 800px;
     overflow-x: hidden;
     margin: 20px auto;
-    padding: 10px;
-    `;
+    padding: 45px;
+    margin-top: 200px;
+    margin-bottom: 75px;
+    background-color: white;
+    box-shadow: 2px 1px 25px -5px rgba(0,0,0,0.75);
+      `;
 
-  fetch(`${getBaseURL()}${Object.values(routes)[route] || "index"}.md`)
+  console.log(route);
+
+  fetch(
+    `${getBaseURL()}${(Object.values(routes)[route] || {}).name || "index"}.md`
+  )
     .then((response) => response.text())
     .then((text) => {
       self.innerHTML = md.render(text.split("---")[2]);
