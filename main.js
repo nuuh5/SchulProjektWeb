@@ -5,7 +5,7 @@ const md = new Remarkable({ html: true });
 
 const getBaseURL = () =>
   window.location.host === "nuuh5.github.io"
-    ? "https://cdn.jsdelivr.net/gh/nuuh5/SchulProjektWeb/pages/"
+    ? "https://gitcdn.xyz/repo/nuuh5/SchulProjektWeb/master/pages/"
     : "./pages/";
 
 export const body = ({ subs: { route }, self }) => {
