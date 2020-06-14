@@ -1,5 +1,9 @@
 # [Webseite Kadetten Zürich](https://kadettenzuerich.ch/)
+<<<<<<< HEAD
 [github pages](http://nuuh5.github.io/SchulProjektWeb)
+=======
+[Github Pages](https://nuuh5.github.io/SchulProjektWeb/)
+>>>>>>> 1fa7f2e25b92269536808763b3698c6cfedd966b
 
 #### Zeit
 
