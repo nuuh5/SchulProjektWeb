@@ -31,3 +31,13 @@ export const body = ({ subs: { route }, self }) => {
       self.innerHTML = md.render(text.split("---")[2]);
     });
 };
+
+export const credits = ({ self }) =>
+  self.nest("erstellt von Noah Charef & Falk Zwimpfer").css`
+  color: white;
+  opacity: 0.5;
+  padding: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  float: right;
+  `;

@@ -28,5 +28,3 @@ Im Jahresbeitrag nicht inbegriffen sind die **Teilnehmerbeiträge** für Lager, 
 **Alle Mädchen und Knaben ab ca. 7 Jahren können mitmachen.** Das Mindestalter hängt vom persönlichen Fortschritt des Kindes ab.
 
 **Neuaufnahmen erfolgen während des ganzen Jahres.**
-
-[Anmeldung Kadetten (pdf)](files/Anmeldung-Kadetten.pdf)

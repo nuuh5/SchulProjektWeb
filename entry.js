@@ -1,7 +1,6 @@
 const background = new Image();
 
-background.src =
-  "./forest.jpg";
+background.src = "./forest.jpg";
 background.style.position = "fixed";
 background.style.display = "block";
 background.style.top = "-10px";
@@ -18,7 +17,12 @@ document.body.style.background = "black";
 export const main = ({ module }) =>
   module.text.normal.extend(
     ({ self, module }) =>
-      self.nest(module.header.header(), module.main.body(), background).css`
+      self.nest(
+        module.header.header(),
+        module.main.body(),
+        background,
+        module.main.credits()
+      ).css`
       display: block;
       overflow: hidden;
       
