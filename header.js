@@ -53,7 +53,7 @@ export const title = ({ module }) =>
   width: 100%;
   text-align: left;
   font-size: 50px;
-  padding: 20px;
+  padding: 0 20px;
   color: white;
 `.on({
       click: () => {

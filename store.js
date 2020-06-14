@@ -29,5 +29,7 @@ store.route.subscribe((index) => {
   window.location.hash = toHash(Object.keys(routes)[index]);
 });
 
-window.onhashchange = () =>
+window.onhashchange = () => {
+  window.scrollTo(0, 0);
   store.route.next(convertHashToId(window.location.hash));
+};

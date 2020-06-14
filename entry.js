@@ -24,7 +24,6 @@ export const main = ({ module }) =>
         module.main.credits()
       ).css`
       display: block;
-      overflow: hidden;
-      
+      overflow: hidden;      
       `
   );

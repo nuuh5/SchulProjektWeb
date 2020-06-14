@@ -21,13 +21,15 @@ export const body = ({ subs: { route }, self }) => {
     box-shadow: 2px 1px 25px -5px rgba(0,0,0,0.75);
       `;
 
-  console.log(route);
+  const script = /.*script: (.*)/;
 
   fetch(
     `${getBaseURL()}${(Object.values(routes)[route] || {}).name || "index"}.md`
   )
     .then((response) => response.text())
     .then((text) => {
+      const s = script.exec(text.split("---")[1]);
+      if (s) import(s[1]).then((mod) => mod.default());
       self.innerHTML = md.render(text.split("---")[2]);
     });
 };

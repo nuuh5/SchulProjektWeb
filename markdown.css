@@ -1,6 +1,11 @@
 @media only screen and (max-width: 630px) {
   header-title {
     font-size: 30px !important;
+    padding: 10px 20px !important;
+  }
+
+  main-body {
+    padding: 15px !important;
   }
 
   header-title img {
@@ -114,5 +119,13 @@ main-body > *:first-child {
 a {
   color: #293679;
   text-decoration: none;
-  border-bottom: 1px solid #293679;
+  border-bottom: 0.8px solid #293679;
+}
+
+strong {
+  font-weight: 700;
+}
+
+body {
+  overflow-y: scroll;
 }
