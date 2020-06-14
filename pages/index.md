@@ -9,5 +9,5 @@ name: Alle zwei Wochen ein Abenteuer
 
 ### Hier findet ihr alle wichtigen Informationen und Bilder unserer Aktivitäten.
 
-<a class="primary button" href="/#Mitmachen">Mitmachen</a>
+<a class="primary button" href="#Mitmachen">Mitmachen</a>
 <a class="secondary button" href="#Ueber_Uns">Entdecken</a>
